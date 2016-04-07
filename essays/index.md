@@ -7,7 +7,7 @@ title: Essays
   {% unless post.draft %}
   {% assign currentdate = post.date | date: "%Y" %}
   {% if currentdate != date %}
-    {% unless forloop.first %}<ul>{% endunless %}
+    {% unless forloop.first %}</ul>{% endunless %}
     <h3>{{ currentdate }}</h3>
     <ul>
     {% assign date = currentdate %}
