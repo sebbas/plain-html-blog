@@ -13,4 +13,41 @@ layout: default
 
   {{ content }}
 
+  {% assign cat = page.category | downcase %}
+  {% for post in site.categories.[cat] %}
+    {% if post.url == page.url %}
+      {% assign post_index0 = forloop.index0 %}
+      {% assign post_index1 = forloop.index %}
+    {% endif %}
+  {% endfor %}
+  {% for post in site.categories.[cat] %}
+    {% if post_index0 == forloop.index %}
+      {% assign next_post = post %}
+    {% endif %}
+    {% if post_index1 == forloop.index0 %}
+      {% assign prev_post = post %}
+    {% endif %}
+  {% endfor %}
+
+  <table width="100%" border="0">
+    <tb>
+      <tr>
+        {% if prev_post %}
+          <td><b>Previous</b></td>
+        {% endif %}
+        {% if next_post %}
+          <td align="right"><b>Next</b></td>
+        {% endif %}
+      </tr>
+      <tr>
+        {% if prev_post %}
+          <td><a href="{{ prev_post.url }}">{{ prev_post.title | strip_html | truncate: 30}}</a></td>
+        {% endif %}
+        {% if next_post %}
+          <td align="right"><a href="{{ next_post.url }}">{{ next_post.title | strip_html | truncate: 30}}</a></td>
+        {% endif %}
+      </tr>
+    </tb>
+  </table>
+
 </article>
