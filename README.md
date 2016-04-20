@@ -13,6 +13,13 @@ So now go ahead, you'll want to [get the source code][source-code-blog] and read
 
 ## Installation
 
+- [Fork this repository](https://github.com/sebbas/plain-html-blog/fork)
+- Clone it: `git clone git@github.com:sebbas/plain-html-blog.git`
+- Install ruby things: `bundle install` (if this doesn't work, look into [installing Bundler](http://bundler.io))
+- Start it up: `jekyll serve -w`
+
+You should have a server up and running locally at <http://localhost:4000>.
+
 ## Customization
 
 ## Deployment
