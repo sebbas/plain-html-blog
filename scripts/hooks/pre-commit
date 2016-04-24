@@ -1,0 +1,11 @@
+#!/bin/sh
+# Script to modify the `last-updated` field in the YAML front matter
+# 
+# Since git does not keep track of hooks in .git/hooks, the script is in the main project directory (not in .git)
+# .git/hooks/pre-commits contains a symlink 
+
+git diff --cached --name-status | grep "^M" | while read a b; do
+  cat $b | sed "/---.*/,/---.*/s/^last-modified:.*$/last-modified: $(date -u "+%Y-%m-%d %T %Z")/" > tmp
+  mv tmp $b
+  git add $b
+done
