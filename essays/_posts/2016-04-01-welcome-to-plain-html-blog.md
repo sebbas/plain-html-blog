@@ -2,6 +2,7 @@
 layout: post
 title:  "Welcome to <i>plain-html-blog</i>"
 date:   2016-04-01 09:00:00 +0200
+updated: 2016-04-01 09:00:00 +0200
 category: essays
 ---
 
