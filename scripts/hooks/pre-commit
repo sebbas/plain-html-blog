@@ -5,7 +5,7 @@
 # It should be symlinked to .git/hooks/pre-commits
 
 git diff --cached --name-status | grep "^M" | while read a b; do
-  cat $b | sed "/---.*/,/---.*/s/^updated:.*$/updated: $(date -u "+%Y-%m-%d %T %Z")/" > tmp
+  cat $b | sed "/---.*/,/---.*/s/^updated:.*$/updated: $(date "+%Y-%m-%d %T %z")/" > tmp
   mv tmp $b
   git add $b
 done
