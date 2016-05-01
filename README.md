@@ -1,28 +1,34 @@
 # plain-html-blog
-*plain-html-blog* is a very clean [Jekyll][jekyll] blog that works without CSS. It was inspired by websites which (for valid reasons) still make minimal use of styling with CSS and the like.
+*plain-html-blog* is a very clean, minimal [Jekyll][jekyll] blog that works without CSS. It was inspired by websites which (for valid reasons) still make minimal use of styling with CSS and the like.
 
 You can see it live right here: [http://sebbas.org][sebbas]
 
 ![screenshot-plain-html-blog][screenshot]
 
-Just to get an idea, check out [https://stallman.org][stallman], Richard Stallman's personal website, [http://www.paulgraham.com][graham], Paul Graham's blog, or [http://motherfuckingwebsite.com][motherfuckingwebsite] (sorry for the language :~). They all come with a certain 90's flavour which in 2016 is still very functional and in a way elegant (only 90's kids will know &hellip; :)
-
-Other than that, this Jekyll blog works like any other static website so you should feel right at home.
-
-So now go ahead, you'll want to [get the source code][source-code-blog] and read the README to learn how make your own *plain-html-blog*.
-
 ## Installation
 
-- [Fork this repository](https://github.com/sebbas/plain-html-blog/fork)
-- Clone it: `git clone git@github.com:sebbas/plain-html-blog.git`
-- Install ruby things: `bundle install` (if this doesn't work, look into [installing Bundler](http://bundler.io))
-- Start it up: `jekyll serve -w`
+1. [Fork this repository][fork]
+2. Clone it: `git clone git@github.com:yourusername/plain-html-blog.git`
+3. Install ruby things: `bundle install` (if this doesn't work, look into [installing Bundler][bundler])
+4. Start it up: `jekyll serve -w`
 
 You should have a server up and running locally at <http://localhost:4000>.
 
+### Optional
+
+If you would like to have the `updated` field (used to show the last modification date in the footer) in the YAML front matter to update automatically each time the page was modified and you make a commit, then symlink the executable `pre-commit` script ([scripts/pre-commit][precommit]) to your `.git/hooks`. You can do this by running
+
+`ln -s -f ../../scripts/pre-commit .git/hooks/pre-commit`
+
 ## Customization
 
+1. [_config.yml][config]: Your email, personal information and usernames should go here.
+2. [CNAME][cname]: Want to use a custom domain? Just place yours in here.
+3. [images/][images]: If you have a photo or icon you'd like to use I recommend generating `favicon`, `apple-touch-icon.png` and the like with an online icon generator (just google for one). Place all generated images and files in this directory and, if necessary, adapt the paths in [_includes/head.html][head]
+
 ## Deployment
+
+This blog is all set for use with Github (it's not using any additional Jekyll plugins). So all you have to do is rename your repository to `username.github.io`. Your site will be available at [http://yourusername.github.io][githubio]
 
 [sebbas]: http://sebbas.org
 [jekyll]: http://jekyllrb.com
@@ -31,4 +37,11 @@ You should have a server up and running locally at <http://localhost:4000>.
 [graham]: http://www.paulgraham.com/index.html
 [motherfuckingwebsite]: http://motherfuckingwebsite.com
 [source-code-blog]: https://github.com/sebbas/plain-html-blog
-
+[fork]: https://github.com/sebbas/plain-html-blog/fork
+[bundler]: http://bundler.io
+[precommit]: https://github.com/sebbas/plain-html-blog/blob/master/scripts/hooks_config.yml
+[config]: https://github.com/sebbas/plain-html-blog/blob/master/_config.yml
+[cname]: https://github.com/sebbas/plain-html-blog/blob/master/CNAME
+[images]: https://github.com/sebbas/plain-html-blog/tree/master/images
+[head]: https://github.com/sebbas/plain-html-blog/blob/master/_includes/head.html
+[githubio]: http://username.github.io 
