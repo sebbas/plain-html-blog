@@ -2,12 +2,12 @@ permalink: /:title/
 plugins:
   - jekyll-sitemap
 
-title: Sebbas.org
+title: sebbas.org
 url: http://sebbas.org
 baseurl: ""
-description: "Sebastián is a programmer, Blender developer, computer graphics researcher, Android developer, swimmer, pull-up lover and sometimes just likes to read."
+description: "Personal website of Sebastián"
 author: Sebastián
-twitter: realsebbas
+twitter: sebbas
 stackoverflow: 1480784/sebbas
 trello: sebbas
 googleplay: sebbas
@@ -17,7 +17,6 @@ bitbucket: sebbas
 goodreads: sebbas
 delicious: sebbas
 hackernews: sebbas
-instagram: realsebbas
 medium: sebbas
 youtube: UCiU3oTGKL4GDr5xgK_EMjnQ
 500px: sebbas
