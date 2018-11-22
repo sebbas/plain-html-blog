@@ -14,13 +14,13 @@ layout: default
   {{ content }}
 
   {% assign cat = page.category | downcase %}
-  {% for post in site.categories.[cat] %}
+  {% for post in site.categories[cat] %}
     {% if post.url == page.url %}
       {% assign post_index0 = forloop.index0 %}
       {% assign post_index1 = forloop.index %}
     {% endif %}
   {% endfor %}
-  {% for post in site.categories.[cat] %}
+  {% for post in site.categories[cat] %}
     {% if post_index0 == forloop.index %}
       {% assign next_post = post %}
     {% endif %}
