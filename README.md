@@ -1,7 +1,7 @@
 # plain-html-blog
 *plain-html-blog* is a very clean, minimal [Jekyll][jekyll] blog that works without CSS. It was inspired by websites which (for valid reasons) still make minimal use of styling with CSS and the like.
 
-You can see it live right here: [http://sebbas.org][sebbas]
+You can see it live right here: [https://sebbas.org][sebbas]
 
 ![screenshot-plain-html-blog][screenshot]
 
@@ -28,20 +28,20 @@ If you would like to have the `updated` field (used to show the last modificatio
 
 ## Deployment
 
-This blog is all set for use with Github (it's not using any additional Jekyll plugins). So all you have to do is rename your repository to `username.github.io`. Your site will be available at [http://yourusername.github.io][githubio]
+This blog is all set for use with Github (it's not using any additional Jekyll plugins). So all you have to do is rename your repository to `username.github.io`. Your site will be available at [https://yourusername.github.io][githubio]
 
-[sebbas]: http://sebbas.org
-[jekyll]: http://jekyllrb.com
+[sebbas]: https://sebbas.org
+[jekyll]: https://jekyllrb.com
 [screenshot]: https://dl.dropboxusercontent.com/s/jbb5nfdas6h400b/screenshot_plain_html_blog.png
 [stallman]:   https://stallman.org
 [graham]: http://www.paulgraham.com/index.html
-[motherfuckingwebsite]: http://motherfuckingwebsite.com
+[motherfuckingwebsite]: https://motherfuckingwebsite.com
 [source-code-blog]: https://github.com/sebbas/plain-html-blog
 [fork]: https://github.com/sebbas/plain-html-blog/fork
-[bundler]: http://bundler.io
+[bundler]: https://bundler.io
 [precommit]: https://github.com/sebbas/plain-html-blog/blob/master/scripts/hooks_config.yml
 [config]: https://github.com/sebbas/plain-html-blog/blob/master/_config.yml
 [cname]: https://github.com/sebbas/plain-html-blog/blob/master/CNAME
 [images]: https://github.com/sebbas/plain-html-blog/tree/master/images
 [head]: https://github.com/sebbas/plain-html-blog/blob/master/_includes/head.html
-[githubio]: http://username.github.io 
+[githubio]: https://username.github.io

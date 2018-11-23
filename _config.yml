@@ -3,7 +3,7 @@ plugins:
   - jekyll-sitemap
 
 title: sebbas.org
-url: http://sebbas.org
+url: https://sebbas.org
 baseurl: ""
 description: "Personal website of Sebastián"
 author: Sebastián

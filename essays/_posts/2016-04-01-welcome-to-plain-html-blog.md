@@ -2,7 +2,7 @@
 layout: post
 title:  "Welcome to plain-html-blog"
 date:   2016-04-01 09:00:00 +0200
-updated: 2016-04-01 09:00:00 +0200
+updated: 2018-11-23 21:40:58 +0100
 category: essays
 ---
 
@@ -14,8 +14,8 @@ Other than that, this Jekyll blog works like any other static website so you sho
 
 So now go ahead, you'll want to [get the source code][source-code-blog] and read the README to learn how make your own *plain-html-blog*.
 
-[jekyll]: http://jekyllrb.com
+[jekyll]: https://jekyllrb.com
 [stallman]:   https://stallman.org
 [graham]: http://www.paulgraham.com/index.html
-[motherfuckingwebsite]: http://motherfuckingwebsite.com
+[motherfuckingwebsite]: https://motherfuckingwebsite.com
 [source-code-blog]: https://github.com/sebbas/plain-html-blog
