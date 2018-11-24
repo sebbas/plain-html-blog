@@ -39,7 +39,7 @@ This blog is all set for use with Github (it's not using any additional Jekyll p
 [source-code-blog]: https://github.com/sebbas/plain-html-blog
 [fork]: https://github.com/sebbas/plain-html-blog/fork
 [bundler]: https://bundler.io
-[precommit]: https://github.com/sebbas/plain-html-blog/blob/master/scripts/hooks_config.yml
+[precommit]: https://github.com/sebbas/plain-html-blog/blob/master/scripts/pre-commit
 [config]: https://github.com/sebbas/plain-html-blog/blob/master/_config.yml
 [cname]: https://github.com/sebbas/plain-html-blog/blob/master/CNAME
 [images]: https://github.com/sebbas/plain-html-blog/tree/master/images
